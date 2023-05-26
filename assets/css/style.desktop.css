@@ -1,19 +1,17 @@
 /* #region BODY */
 
-  body {
+body {
     text-align: center;
     color: #393d41;
     font-size: 1.2rem;
     font-family: sans-serif;
     line-height: 1.65;
-    min-width: 350px;
-    max-width: 1000px;
+    min-width: 1500px;
   }
 
-/* #endregion BODY*/
+  /* #endregion BODY*/
 
-/* #region HEADER */
-
+/* #region HEADER*/
   header {
     background-color: black;
     width: 100%;
@@ -22,67 +20,82 @@
   
   header > img {
     width: 8em;
-    margin: auto;
     display: block;
+    margin-left: 2em;
   }
 
-/*#endregion HEADER */
+/* #endregion HEADER */  
 
-/* #region  NAV */
+/* #region NAV*/
+
 nav {
     background-image: url(../images/banner.jpg);
-    background-size: 30em;
-    background-position: center;
-    padding: 1em;
+    background-size: cover;
+    padding: 5em;
   }
+
+nav p{
+    padding:1em 10em 2em
+}
 
 /* #endregion NAV */
 
-/* #region MAIN */
+/* #region MAIN*/
 
-  main img {
+main section:first-child{
     width: 100%;
-  }
-
-  main > section > img {
-    border-radius: 100%;
-    width: 75%;
     margin: auto;
-    margin-top: 10px;
-    display: block;
-  }
+    display: flex;
+}
 
-  main > section:nth-child(2) {
+main section:first-child img{
+    border-radius: 100%;
+    margin:5em;
+}
+
+main section:first-child div{
+    width: 50%;
+    margin:0;
+}
+
+main section:first-child div:last-child{
+    text-align: left;
+    margin: 5em;
+    padding: 1vh 10vh
+}
+
+main section:first-child div:last-child h5{
+    padding: 1vh 0vh 0px;
+
+}
+
+main section:nth-child(2)
+{
     background-color: #e22d0e;
+    width: 100%;
+    text-align: center;
     color: white;
     padding-top: 40px;
     padding-bottom: 40px;
-  }
+    min-width: 50vh
+}
 
-  main > section > p:last-child {
-    margin-bottom: 4em;
-  }
+main section:last-child{
+    display: flex;
+    padding:5em
+}
 
-  main > section:last-child div:first-child {
-    margin-top: 3em;
-  }
-
-  main > section:last-child div {
+main section:last-child div{
     margin: 2em 1em;
     border: solid 0.5px lightgray;
     border-radius: 5px;
-  }
+}
 
-  main > section:last-child p {
-    padding: 20px;
-    padding-bottom: 50px;
-  }
+main section:last-child div > img{
+    max-height: 15em;
+}
 
-  main > section:last-child h5 {
-    padding: 2vh 5vh 0px;
-  }
-
- /*#endregion MAIN*/ 
+/* #endregion MAIN*/
 
 /* #region  FOOTER */
   footer {
@@ -94,13 +107,23 @@ nav {
     color: white;
   }
 
+  footer div{
+    margin:auto;
+    max-width: 25vh;
+  }
+
+  footer p {
+    text-align: left;
+  }
+
   footer h2 {
     padding-top: 1em;
     font-size: xx-large;
   }
 
   footer hr {
-    width: 50%;
+    text-align: center;
+    width: 95%;
     margin-top: 20px;
   }
 
@@ -118,9 +141,9 @@ nav {
 
 /* #endregion FOOTER */
 
-/* #region TAGS */
+/* #region TAGS*/
 
-  h1 {
+h1 {
     font-weight: bold;
     color: #25a2c3;
     font-size: 35px;
@@ -183,11 +206,3 @@ nav {
   }
 
 /* #endregion TAGS  */
-
-/* #region ID*/
-
-  #address {
-    text-decoration: none;
-  }
-
-/* #endregion ID*/
