@@ -87,7 +87,7 @@ main section:last-child{
 
 main section:last-child div{
     margin: 2em 1em;
-    border: solid 0.5px lightgray;
+    border: solid 0.5px #dee1e3;
     border-radius: 5px;
 }
 
